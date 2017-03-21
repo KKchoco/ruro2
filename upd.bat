@@ -1,5 +1,6 @@
 @ECHO off
 echo Скачиваются файлы, пожалуйста, подождите...
+echo/
 md DATA\81
 wget https://raw.githubusercontent.com/KKchoco/ruro2/master/STRING.VDK -O "%cd%/DATA/81/STRING.VDK"
 wget https://raw.githubusercontent.com/KKchoco/ruro2/master/LANGUI.VDK -O "%cd%/DATA/81/LANGUI.VDK"
@@ -15,5 +16,3 @@ wget https://raw.githubusercontent.com/KKchoco/ruro2/master/FontInfo.xml -O "%cd
 wget https://raw.githubusercontent.com/KKchoco/ruro2/master/NotoSans-Bold.ttf -O "%cd%/lang/81/UI/FONT/NotoSans-Bold.ttf"
 taskkill /f /im RURO2Launcher.exe
 start RURO2Launcher.exe
-cls
-pause
